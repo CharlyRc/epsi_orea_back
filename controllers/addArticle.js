@@ -1,4 +1,4 @@
-import BDD from "../model/BDD.cjs";
+import BDD from "../model/BDD.js";
 import Article from "../model/Article.js";
 import Articles_pictures from "../model/Articles_pictures.js";
 

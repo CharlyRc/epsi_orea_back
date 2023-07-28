@@ -1,4 +1,4 @@
-import BDD from "../model/BDD.cjs";
+import BDD from "../model/BDD.js";
 import Product from "../model/Product.js";
 import deleteFile from "../config/deleteFile.js";
 import Pictures from "../model/Pictures.js";

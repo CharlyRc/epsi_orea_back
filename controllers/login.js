@@ -1,4 +1,4 @@
-import BDD from "../model/BDD.cjs";
+import BDD from "../model/BDD.js";
 import Users from "../model/Users.js";
 import {generateToken} from "../config/token.js";
 
