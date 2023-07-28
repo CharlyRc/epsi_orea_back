@@ -1,4 +1,6 @@
 import mysql from "mysql";
+require('dotenv').config();
+
 
 class BDD {
     constructor(){

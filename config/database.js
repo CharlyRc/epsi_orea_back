@@ -1,4 +1,6 @@
 import mysql from "mysql";
+require('dotenv').config();
+
 
 export let pool  = mysql.createPool({
   connectionLimit : 10000,
