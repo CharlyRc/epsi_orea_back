@@ -1,7 +1,7 @@
 import mysql from "mysql";
-import {config} from 'dotenv';
+// import {config} from 'dotenv';
 
-config(); 
+// config(); 
 
 
 export let pool  = mysql.createPool({
