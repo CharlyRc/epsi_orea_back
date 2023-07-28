@@ -1,4 +1,4 @@
-import BDD from "../model/BDD.js";
+import BDD from "../model/BDD.cjs";
 import Pictures from "../model/Pictures.js";
 
 export default async (req, res) => {

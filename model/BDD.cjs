@@ -1,5 +1,7 @@
 import mysql from "mysql";
-require('dotenv').config();
+import {config} from 'dotenv';
+
+config(); 
 
 
 class BDD {

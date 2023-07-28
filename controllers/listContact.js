@@ -1,4 +1,4 @@
-import BDD from "../model/BDD.js";
+import BDD from "../model/BDD.cjs";
 import Contact from "../model/Contact.js";
 
 export default async (req, res) => {
