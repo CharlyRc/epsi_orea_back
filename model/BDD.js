@@ -1,7 +1,7 @@
 import mysql from "mysql";
-// import {config} from 'dotenv';
+import {config} from 'dotenv';
 
-// config(); 
+config(); 
 
 
 class BDD {
@@ -26,5 +26,7 @@ class BDD {
         });
     }
 }
+
+
 
 export default BDD

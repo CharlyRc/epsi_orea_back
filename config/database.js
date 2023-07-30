@@ -1,12 +1,12 @@
 import mysql from "mysql";
-// import {config} from 'dotenv';
+import {config} from 'dotenv';
 
-// config(); 
+config(); 
 
 
 export let pool  = mysql.createPool({
   connectionLimit : 10000,
-    host:process.env.DATABASE_HOST,// on rentre l'hôte, l'adresse url où se trouve la bdd
+    host:process.env.DATABASE_HOST,
     user:process.env.DATABASE_USER, // identifiant BDD
     password:process.env.DATABASE_PASSWORD, // le password
     database:process.env.DATABASE_NAME, // nom de la base de donnée
