@@ -3,7 +3,7 @@ import path from 'path';
 import fs from 'fs';
 
 
-const allowedExtensions = ['jpeg', 'jpg', 'png', 'gif'];
+const allowedExtensions = ['jpeg', 'jpg', 'png', 'gif', 'pdf'];
 const imageDirectory = 'public/img';
 const MAX_FIELD_SIZE = 20 * 1024 * 1024;
 
