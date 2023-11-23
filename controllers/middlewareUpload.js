@@ -15,8 +15,9 @@ const form = formidable({
 });
 
 const checkAcceptedExtensions = (file) => {
-    const type = file.mimetype.split('/').pop();
-    return allowedExtensions.includes(type);
+    // const type = file.mimetype.split('/').pop();
+    const extension = path.extname(file.name).toLowerCase().substring(1);
+    return allowedExtensions.includes(extension);
 };
 
 export default async (req, res, next) => {
