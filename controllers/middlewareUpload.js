@@ -3,7 +3,7 @@ import path from 'path';
 import fs from 'fs';
 
 
-const allowedExtensions = ['jpeg', 'jpg', 'png', 'gif', 'pdf'];
+const allowedExtensions = ['jpeg', 'jpg', 'png', 'gif'];
 const imageDirectory = 'public/img';
 const MAX_FIELD_SIZE = 20 * 1024 * 1024;
 
@@ -15,9 +15,8 @@ const form = formidable({
 });
 
 const checkAcceptedExtensions = (file) => {
-    // const type = file.mimetype.split('/').pop();
-    const extension = path.extname(file.name).toLowerCase().substring(1);
-    return allowedExtensions.includes(extension);
+    const type = file.mimetype.split('/').pop();
+    return allowedExtensions.includes(type);
 };
 
 export default async (req, res, next) => {
